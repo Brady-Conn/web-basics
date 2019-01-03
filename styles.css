@@ -1,12 +1,39 @@
-a {
-    text-decoration: none;
-    color: #ff00ff;
-}
-
 .links {
+    text-decoration: none;
     color: #000000;
 }
 
-#redditlink {
-    color: #bb6694;
+body {
+    bacground-color: #e6ffff;
 }
+
+h1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    text-align: center;
+    color: #ff00ff;
+}
+
+.vertical-menu {
+    width: 200px;
+  }
+  
+  .vertical-menu a {
+    background-color: #eee;
+    color: black;
+    display: block;
+    padding: 12px;
+    text-decoration: none; 
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; 
+  }
+  
+  .vertical-menu a.active {
+    background-color: #ff00ff; 
+    color: black;
+  }
+
+  #login {
+    display: inline-block;
+  }
