@@ -10,8 +10,9 @@
         <script type="text/javascript" src="app.js"></script>
         <link rel="stylesheet" href="bootstrap.min.css">
         <link rel="stylesheet" href="bootstrap-checkbox-radio-list-group-item.min.css">
-
-
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> 
     </head>
     <body>
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -70,7 +71,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="main-page">
+                    <div class="container-fluid">
+                        <div class="row">
                         <div class="col-2">
                         <div class="list-group checkbox-list-group">
                             <div class="list-group-item">&nbsp;<label><input type="checkbox"><span class="list-group-item-text"><i class="fa fa-fw"></i> Include All</span></label></div>
@@ -80,6 +82,58 @@
                             <div class="list-group-item list-group-item"><label>&nbsp;<input type="checkbox"><span class="list-group-item-text"><i class="fa fa-fw"></i> Older Sets</span></label></div>
                         </div>
                     </div>
+                    <div class="col-8">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#allcards" role="tab" aria-controls="All Cards" aria-selected="true">All Cards</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#mydeck" role="tab" aria-controls="My Deck" aria-selected="false">My Deck</a>
+                            </li>
+                          </ul>
+                    </div>
+                    <div class="col-2">
+                            <ul class="list-group">
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Plains
+                                      <span class="badge badge-primary badge-pill">14</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Serra Angel
+                                      <span class="badge badge-primary badge-pill">2</span>
+                                    </li>
+                                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                                      Wrath of God
+                                      <span class="badge badge-primary badge-pill">1</span>
+                                    </li>
+                                  </ul>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="stats">
+                            <div class="card-deck m-4">
+                                    <div class="card">
+                                      <img src="piechart.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Rarity Breakdown</h5>
+                                        <p class="card-text">Your deck contains...</p>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <img src="piechart.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Cost Breakdown</h5>
+                                        <p class="card-text">Your deck contains...</p>
+                                      </div>
+                                    </div>
+                                    <div class="card">
+                                      <img src="piechart.png" class="card-img-top" alt="...">
+                                      <div class="card-body">
+                                        <h5 class="card-title">Color Breakdown</h5>
+                                        <p class="card-text">Your deck contains...</p>
+                                      </div>
+                                    </div>
+                                  </div>
                     </div>
         
     </body>
